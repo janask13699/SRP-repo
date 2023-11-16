@@ -23,17 +23,18 @@ namespace SRP
                 StandardMessages.DisplayValidationError("last name");
                 return false;
             }
+            if (string.IsNullOrWhiteSpace(person.Gender))
+            {
+                StandardMessages.DisplayValidationError("Gender");
+                return false;
+            }
 
             if (string.IsNullOrWhiteSpace(person.Email))
             {
                 StandardMessages.DisplayValidationError("Email");
                 return false;
             }
-            //if (string.IsNullOrWhiteSpace(person.Gender))
-            //{
-            //    StandardMessages.DisplayValidationError("Gender");
-            //    return false;
-            //}
+          
 
             return true;
         }
