@@ -23,10 +23,10 @@ namespace SRP
             
             output.Email = $"{output.FirstName}{output.LastName}@twilightsoftwares.com";
             Console.WriteLine($"Your Email is:{ output.Email}");
-            
 
-            //Console.WriteLine("Enter Your Gender: ");
-            //output.Gender = Console.ReadLine();
+
+            Console.WriteLine("Enter Your Gender: ");
+            output.Gender = Console.ReadLine();
 
             return output;
         }
